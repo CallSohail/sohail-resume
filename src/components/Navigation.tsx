@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { Github, Linkedin, Mail, Phone, FileText } from "lucide-react";
+import { ModeToggle } from "./ui/mode-toggle";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -58,6 +59,7 @@ const Navigation = () => {
             >
               <FileText className="h-5 w-5" />
             </a>
+            <ModeToggle />
           </div>
         </div>
       </div>
