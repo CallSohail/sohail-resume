@@ -22,8 +22,8 @@ const Navigation = () => {
     >
       <div className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <a href="#" className="text-xl font-bold hover-translate">
-            Muhammad Sohail
+          <a href="#" className="text-2xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-500">
+            SOHAIL
           </a>
           <div className="flex items-center gap-4">
             <a
