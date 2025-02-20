@@ -4,10 +4,58 @@ import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
   {
+    title: "AI Agent for Automated Data Analysis",
+    description: "Built an intelligent agent using LangChain and OpenAI that autonomously analyzes datasets, generates insights, and creates visualization recommendations.",
+    duration: "3 Months",
+    technologies: ["LangChain", "OpenAI API", "Python", "Streamlit", "Pandas"],
+    demoLink: "https://www.linkedin.com/in/muhammadsohail951/",
+    githubLink: "https://github.com/CallSohail"
+  },
+  {
+    title: "RAG-Enhanced Document Search Engine",
+    description: "Developed a Retrieval-Augmented Generation system for intelligent document search and question answering using vector embeddings and LLMs.",
+    duration: "4 Months",
+    technologies: ["LlamaIndex", "OpenAI", "FastAPI", "PostgreSQL", "Redis"],
+    demoLink: "https://www.linkedin.com/in/muhammadsohail951/",
+    githubLink: "https://github.com/CallSohail"
+  },
+  {
+    title: "LLM-Powered Code Assistant",
+    description: "Created a specialized code assistant using fine-tuned LLMs to help developers with code generation, debugging, and optimization.",
+    duration: "3 Months",
+    technologies: ["PyTorch", "Transformers", "FastAPI", "Redis", "Docker"],
+    demoLink: "https://www.linkedin.com/in/muhammadsohail951/",
+    githubLink: "https://github.com/CallSohail"
+  },
+  {
     title: "Bridging the Gap in Text-Based Emotion Detection",
     description: "Developed a multi-label emotion classification model for detecting emotions from text using Deep Learning and NLP tools.",
     duration: "2 Months",
     technologies: ["TensorFlow", "Keras", "PyTorch", "NLTK", "SpaCy"],
+    demoLink: "https://www.linkedin.com/in/muhammadsohail951/",
+    githubLink: "https://github.com/CallSohail"
+  },
+  {
+    title: "Autonomous Trading Bot with Reinforcement Learning",
+    description: "Implemented a trading bot using Deep Reinforcement Learning to make autonomous trading decisions based on market data.",
+    duration: "5 Months",
+    technologies: ["PyTorch", "Stable-Baselines3", "pandas-ta", "FastAPI", "MongoDB"],
+    demoLink: "https://www.linkedin.com/in/muhammadsohail951/",
+    githubLink: "https://github.com/CallSohail"
+  },
+  {
+    title: "Multi-Modal AI Content Generator",
+    description: "Built a system that generates coordinated text, image, and audio content using multiple AI models and ensures content coherence.",
+    duration: "4 Months",
+    technologies: ["Stable Diffusion", "Whisper", "GPT-3", "FastAPI", "React"],
+    demoLink: "https://www.linkedin.com/in/muhammadsohail951/",
+    githubLink: "https://github.com/CallSohail"
+  },
+  {
+    title: "Real-time Video Analysis System",
+    description: "Developed a real-time video analysis system using computer vision and deep learning for object detection and activity recognition.",
+    duration: "3 Months",
+    technologies: ["OpenCV", "YOLO", "TensorFlow", "Redis", "FastAPI"],
     demoLink: "https://www.linkedin.com/in/muhammadsohail951/",
     githubLink: "https://github.com/CallSohail"
   },
@@ -32,7 +80,7 @@ const Projects = () => {
           viewport={{ once: true }}
         >
           <h2 className="section-title">Projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <motion.div
                 key={index}
@@ -40,7 +88,7 @@ const Projects = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="glass-card p-6"
+                className="glass-card p-6 hover:scale-105 transition-transform duration-300"
               >
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                 <p className="text-sm text-primary mb-4">Duration: {project.duration}</p>
